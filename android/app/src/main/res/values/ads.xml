@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Yandex Mobile Ads (Рекламная сеть Яндекса) — the ONLY place with ad unit IDs for «Марий мут».
+     App «Марий мут» in partner.yandex.ru: app ID 20243332 (test mode until a store link is added there).
+     Real units: banner R-M-20243332-1, interstitial R-M-20243332-2, rewarded R-M-20243332-3 (reward «1 буква»).
+     Debug builds use the demo units automatically; release with demo units: gradle assembleRelease -PadsDemo=true -->
+<resources>
+    <string name="ad_banner_id" translatable="false">R-M-20243332-1</string>
+    <string name="ad_interstitial_id" translatable="false">R-M-20243332-2</string>
+    <string name="ad_rewarded_id" translatable="false">R-M-20243332-3</string>
+    <!-- Yandex demo units (always fill, no revenue) -->
+    <string name="ad_banner_demo_id" translatable="false">demo-banner-yandex</string>
+    <string name="ad_interstitial_demo_id" translatable="false">demo-interstitial-yandex</string>
+    <string name="ad_rewarded_demo_id" translatable="false">demo-rewarded-yandex</string>
+    <bool name="ads_age_restricted">false</bool>
+</resources>

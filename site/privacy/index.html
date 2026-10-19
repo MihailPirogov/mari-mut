@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Политика конфиденциальности — Марий мут</title>
+<meta name="description" content="Политика конфиденциальности игры «Марий мут» (Android, Яндекс Игры, веб) — PirogovLab">
+<link rel="canonical" href="https://pirogovlab.ru/mari-wordle/privacy/">
+<link rel="alternate" hreflang="ru" href="https://pirogovlab.ru/mari-wordle/privacy/">
+<link rel="alternate" hreflang="en" href="https://pirogovlab.ru/mari-wordle/privacy/en/">
+<link rel="alternate" hreflang="x-default" href="https://pirogovlab.ru/mari-wordle/privacy/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Михаил Пирогов">
+<meta name="color-scheme" content="light"><meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Pirogov Lab"><meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Политика конфиденциальности — Марий мут"><meta property="og:description" content="Политика конфиденциальности игры «Марий мут» (Android, Яндекс Игры, веб) — PirogovLab"><meta property="og:url" content="https://pirogovlab.ru/mari-wordle/privacy/">
+<style>
+  :root{--accent:#b01e34;--accent-d:#8c1528;--ink:#1d1d1f;--text:#3a3a3c;--muted:#6e6e73;--line:#ececef;--bg:#fff;--soft:#f6f6f7}
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--text);line-height:1.65;background:var(--bg);-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:.18em}
+  a:hover{color:var(--accent-d)}
+  .wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+  .top{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.82);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--line)}
+  nav{display:flex;align-items:center;gap:.6rem;height:3.6rem;font-size:.92rem;color:var(--muted)}
+  nav a{color:var(--ink);text-decoration:none;font-weight:600}
+  nav a:hover{color:var(--accent)}
+  .logo{display:block;width:1.55rem;height:1.55rem}
+  .logo img{width:100%;height:100%;display:block}
+  header{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:3.5rem;align-items:center;padding:4.5rem 0 4rem}
+  .eyebrow{display:flex;align-items:center;gap:.6rem;margin:0 0 1.3rem;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+  .flag{width:1.9rem;height:auto;border-radius:.25rem;box-shadow:0 0 0 1px rgba(0,0,0,.06)}
+  h1{margin:0 0 1.2rem;font-size:clamp(2.1rem,5vw,3.2rem);line-height:1.08;font-weight:700;letter-spacing:-.028em;color:var(--ink)}
+  .lead{font-size:clamp(1.05rem,2.2vw,1.18rem);color:var(--muted);margin:0 0 2rem}
+  .lead b{color:var(--ink);font-weight:600}
+  .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 1.5rem;border-radius:.85rem;font-weight:600;font-size:1rem;color:#fff!important;text-decoration:none;background:var(--accent);box-shadow:0 6px 20px rgba(176,30,52,.22);transition:background .15s,transform .15s,box-shadow .15s}
+  .btn:hover{background:var(--accent-d);transform:translateY(-1px);box-shadow:0 10px 26px rgba(176,30,52,.28)}
+  .meta{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.4rem}
+  .pill{padding:.28rem .75rem;border-radius:999px;background:var(--soft);color:var(--muted);font-size:.84rem}
+  .viz{position:relative;aspect-ratio:1;width:100%;max-width:26rem;justify-self:end;border-radius:1.75rem;overflow:hidden;background:radial-gradient(120% 90% at 50% 35%,#2a0f16 0%,#12080b 60%,#0b0607 100%);box-shadow:0 1px 2px rgba(0,0,0,.08),0 24px 60px rgba(60,10,20,.22);touch-action:pan-y;user-select:none}
+  .viz-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .6s}
+  .viz canvas{position:absolute;inset:0;width:100%!important;height:100%!important;cursor:grab;opacity:0;transition:opacity .6s}
+  .viz canvas:active{cursor:grabbing}
+  .viz.live canvas{opacity:1}.viz.live .viz-img{opacity:0}
+  .viz-hint{position:absolute;left:0;right:0;bottom:.9rem;text-align:center;font-size:.75rem;letter-spacing:.02em;color:rgba(255,255,255,.55);opacity:0;transition:opacity .6s;pointer-events:none}
+  .viz.live .viz-hint{opacity:1}
+  .rule{height:1px;background:var(--line);margin:0;border:0;position:relative;overflow:visible}
+  .rule::after{content:"";position:absolute;left:50%;top:50%;width:.7rem;height:.7rem;margin:-.35rem 0 0 -.35rem;background:var(--accent);transform:rotate(45deg);box-shadow:0 0 0 .55rem #fff}
+  section{margin-top:5rem}
+  h2{font-size:clamp(1.4rem,3vw,1.75rem);margin:0 0 1.4rem;color:var(--ink);font-weight:700;letter-spacing:-.018em}
+  .card{background:#fff;border:1px solid var(--line);border-radius:1.15rem;padding:1.5rem 1.6rem;box-shadow:0 1px 2px rgba(0,0,0,.03),0 8px 30px rgba(0,0,0,.05)}
+  kbd{display:inline-block;padding:.05rem .45rem;border-radius:.4rem;background:var(--soft);border:1px solid #e2e2e6;font-family:inherit;font-size:.88em;color:var(--ink)}
+  ol li,ul li{margin:.5rem 0}
+  li::marker{color:var(--accent)}
+  details{border-bottom:1px solid var(--line);padding:1rem 0}
+  details:first-child{padding-top:0}
+  details:last-child{border-bottom:0;padding-bottom:0}
+  summary{cursor:pointer;font-weight:600;color:var(--ink)}
+  summary::marker{color:var(--accent)}
+  details p{margin:.6rem 0 0;color:var(--muted)}
+  .note{color:var(--muted);font-size:.9rem;margin-top:1.2rem}
+  code{font-size:.82em;word-break:break-all;color:var(--ink);background:var(--soft);padding:.1rem .35rem;border-radius:.3rem}
+  pre.instr{margin:0;white-space:pre-wrap;font-family:inherit;font-size:.95rem;color:var(--text);line-height:1.55}
+  footer{margin-top:6rem;padding:2.5rem 1.5rem 3rem;font-size:.88rem;color:var(--muted);text-align:center;border-top:1px solid var(--line)}
+  footer a{color:var(--ink);text-decoration:none}
+  @media (max-width:760px){header{grid-template-columns:1fr;gap:2.2rem;padding:2.5rem 0 3rem}.viz{justify-self:center;max-width:22rem}section{margin-top:3.5rem}.card{padding:1.2rem}}
+
+  .callout{display:flex;gap:1rem;align-items:flex-start;margin:1.25rem 0 0;padding:1.05rem 1.25rem;border-radius:1rem;background:linear-gradient(135deg,#fff8f8 0%,#fff 60%);border:1px solid #f0d4d8;box-shadow:0 1px 2px rgba(176,30,52,.04)}
+  .callout-ico{flex:0 0 auto;width:2.2rem;height:2.2rem;border-radius:.7rem;background:var(--accent);color:#fff;display:grid;place-items:center;font-size:1.05rem;font-weight:700}
+  .callout strong{color:var(--ink)}
+  .callout p{margin:0;color:var(--text);font-size:.98rem}
+  .shots{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1.2rem}
+  .shot{margin:0;border:1px solid var(--line);border-radius:1.15rem;overflow:hidden;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.03),0 8px 30px rgba(0,0,0,.05)}
+  .shot img{display:block;width:100%;height:auto;vertical-align:middle}
+  .shot figcaption{padding:.75rem 1.1rem .95rem;font-size:.9rem;color:var(--muted);border-top:1px solid var(--line)}
+  @media (min-width:760px){.shots.two{grid-template-columns:1.15fr .85fr}}
+  @media (prefers-reduced-motion:reduce){.btn,.viz-img,.viz canvas{transition:none}}
+
+  .lang{margin-left:auto;flex:none;display:inline-flex;align-items:center;gap:.1rem;padding:.16rem;border-radius:999px;background:var(--soft);border:1px solid var(--line);font-size:.74rem;font-weight:600;letter-spacing:.06em;line-height:1}
+  .lang a,.lang .on{display:block;padding:.42rem .66rem;border-radius:999px;text-decoration:none}
+  nav .lang a{color:var(--muted);font-weight:600}
+  nav .lang a:hover{color:var(--accent)}
+  .lang .on{background:#fff;color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08),0 0 0 1px rgba(0,0,0,.03)}
+  nav>a{flex:none;white-space:nowrap}
+  .crumb{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+</style>
+<style>.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem}.gal img{background:#12151a}
+.beta{display:inline-block;padding:.2rem .65rem;border-radius:999px;background:#fff4d6;color:#8a5a00;font-size:.78rem;font-weight:700;letter-spacing:.04em;vertical-align:middle;border:1px solid #f1d58a}
+.cmp{width:100%;border-collapse:collapse}.cmp td,.cmp th{padding:.55rem .6rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.cmp th{color:var(--ink)}
+.hero-kb{border-radius:1.4rem;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.18);justify-self:end;max-width:26rem}.hero-kb img{display:block;width:100%;height:auto}</style>
+<style>.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(11rem,1fr));gap:1rem}.gal .shot img{background:#f4ede0}.hero-app{justify-self:end;max-width:24rem;width:100%}.hero-app img{display:block;width:100%;height:auto;border-radius:1.4rem;box-shadow:0 20px 50px rgba(60,10,20,.18)}.applogo{width:4.5rem;height:4.5rem;border-radius:1rem;box-shadow:0 0 0 1px rgba(0,0,0,.06);margin:0 0 1rem;display:block}.src li{margin:.35rem 0}</style>
+
+<style>
+  .stage{position:relative;aspect-ratio:1;width:100%;max-width:26rem;justify-self:end;border-radius:1.75rem;overflow:hidden;background:radial-gradient(120% 90% at 50% 35%,#fffaf2 0%,#f4ede0 60%,#eadfcd 100%);box-shadow:0 1px 2px rgba(0,0,0,.08),0 24px 60px rgba(60,20,10,.22)}
+  .stage::before{content:"";position:absolute;inset:auto -20% -35% -20%;height:60%;background:radial-gradient(closest-side,rgba(168,28,34,.14),transparent);filter:blur(10px)}
+  .stage .phone{position:absolute;width:44%;top:12%;transition:opacity .6s}
+  .stage .phone img{display:block;width:100%;height:auto;border-radius:1.1rem;box-shadow:0 18px 40px rgba(0,0,0,.45)}
+  .stage .p1{left:12%;transform:rotate(-6deg);z-index:2}
+  .stage .p2{right:10%;top:17%;transform:rotate(5deg);opacity:.92}
+  .stage canvas{position:absolute;inset:0;width:100%!important;height:100%!important;cursor:grab;opacity:0;transition:opacity .6s;touch-action:pan-y}
+  .stage canvas:active{cursor:grabbing}
+  .stage.live canvas{opacity:1}.stage.live .phone,.stage.live .cal-fallback{opacity:0}.cal-fallback{position:absolute;left:50%;top:50%;width:52%;height:auto;transform:translate(-50%,-50%);transition:opacity .6s}
+  .stage-hint{position:absolute;left:0;right:0;bottom:.9rem;z-index:3;text-align:center;font-size:.75rem;letter-spacing:.02em;color:rgba(42,22,18,.55);opacity:0;transition:opacity .6s;pointer-events:none}
+  .stage.live .stage-hint{opacity:1}
+  @media (max-width:760px){.stage{justify-self:center;max-width:22rem}}
+  @media (prefers-reduced-motion:reduce){.stage .phone,.stage canvas{transition:none}}
+</style>
+<style>main>header h1{font-size:clamp(1.65rem,7.2vw,3.2rem);hyphens:auto;overflow-wrap:break-word}.pp h2{margin-top:2rem}.pp h2:first-child{margin-top:0}.pp ul{padding-left:1.2rem}.pp .upd{color:var(--muted);font-size:.92rem}</style>
+</head>
+<body>
+<div class="top"><div class="wrap">
+  <nav aria-label="Навигация"><a href="/" class="logo" aria-label="Pirogov Lab"><img src="/mariyskaya-raskladka-klaviatury/img/logo-mark-128.webp" width="128" height="128" alt="Pirogov Lab"></a><a href="/">Pirogov Lab</a><span aria-hidden="true">/</span><span class="crumb">Марий мут</span><div class="lang" role="group" aria-label="Язык сайта / Site language"><span class="on" aria-current="true">RU</span><a href="/mari-wordle/privacy/en/" hreflang="en" lang="en">EN</a></div></nav>
+</div></div>
+<main class="wrap">
+  <header style="display:block"><h1>Политика конфиденциальности</h1><p class="upd">Игра «Марий мут» (Android <code>ru.pirogovlab.mariwordle</code>, Яндекс Игры, веб-версия), проект PirogovLab. Редакция от 19.10.2026.</p></header>
+  <section class="card pp" style="margin-top:0">
+  <h2>Кратко</h2>
+  <ul>
+    <li>Игра не требует регистрации и аккаунта. Разработчик не собирает ваши персональные данные.</li>
+    <li>Общая таблица лидеров — по желанию: если вы сами укажете ник, на сервере PirogovLab хранятся этот ник и ваши результаты задачи дня; они видны другим игрокам. Без ника на сервер ничего не отправляется.</li>
+    <li>Прогресс (раунды, статистика, настройки) хранится на вашем устройстве, а в Яндекс Играх — также в облачном сохранении Яндекса.</li>
+    <li>Реклама в Android-приложении и в Яндекс Играх показывается сервисами Яндекса; они обрабатывают технические данные по своим правилам.</li>
+  </ul>
+  <h2>К чему относится политика</h2>
+  <p>Словесная игра «Марий мут», проект лаборатории PirogovLab (разработчик — Михаил Пирогов):</p>
+  <ul>
+    <li>Android-приложение <code>ru.pirogovlab.mariwordle</code> (RuStore, Google Play, установка APK);</li>
+    <li>версия на платформе Яндекс Игры;</li>
+    <li>веб-версия на pirogovlab.ru.</li>
+  </ul>
+  <h2>Какие данные хранит игра</h2>
+  <p>Игра сохраняет только игровые данные: текущие и сыгранные раунды, статистику и серии побед, открытые подсказки, настройки звука и вибрации, отметку о пройденном обучении. Эти данные хранятся в памяти приложения или в локальном хранилище браузера (localStorage) на вашем устройстве и не отправляются разработчику — кроме общей таблицы лидеров, если вы в ней участвуете (см. ниже). Словари и карточки слов встроены в игру и работают без интернета.</p>
+  <h2>Общая таблица лидеров</h2>
+  <p>В игре есть общая для сайта, Android-приложения и Яндекс Игр таблица лидеров (экран «🏆 Лидеры»). Участие добровольное и начинается, только когда вы сами вводите ник. Тогда на сервер PirogovLab (pirogovlab.ru, Россия) передаются и хранятся:</p>
+  <ul>
+    <li>ваш ник (2–16 символов; ники с нецензурными и оскорбительными словами не принимаются);</li>
+    <li>случайный идентификатор игрока и секретный ключ, созданные игрой на вашем устройстве (ключ на сервере хранится только в виде хеша) — они не связаны с вашим именем, телефоном или аккаунтом;</li>
+    <li>результаты задачи дня: дата, длина слова, введённые слова-попытки (для проверки результата), число попыток, победа или нет; из них считаются победы и серии.</li>
+  </ul>
+  <p>Ник, число попыток, победы и серии видны всем игрокам в таблице. Для защиты от злоупотреблений сервер ограничивает частоту запросов и для этого кратковременно (до часа) хранит хеш IP-адреса, а не сам адрес. Результаты, сыгранные без интернета, сохраняются на устройстве и отправляются позже. В Яндекс Играх, если вы вошли в Яндекс ID, игра может предложить ваше имя из профиля как ник — вы можете его изменить. Удалить свой ник и все результаты можно кнопкой «Удалить меня из таблицы» на экране «Лидеры» или по запросу через контакты ниже. Данные не передаются третьим лицам и не используются для рекламы.</p>
+  <h2>Яндекс Игры</h2>
+  <p>В Яндекс Играх игра использует SDK платформы Яндекс Игры (ООО «Яндекс»). Если вы вошли в Яндекс ID, игровой прогресс дополнительно сохраняется в облаке Яндекса («данные игрока»), чтобы его можно было продолжить на другом устройстве; в таблице лидеров «Победы» могут отображаться ваши имя и аватар из профиля Яндекса — согласно вашим настройкам на платформе. Рекламу (полноэкранную, за вознаграждение и sticky-баннер) показывает платформа. Эти данные обрабатывает Яндекс по <a href="https://yandex.ru/legal/games_termsofuse/" rel="noopener" target="_blank">Условиям использования сервиса Яндекс Игры</a> и Политике конфиденциальности Яндекса: <a href="https://yandex.ru/legal/confidential/" rel="noopener" target="_blank">yandex.ru/legal/confidential</a>. Разработчик получает от платформы только игровое сохранение и обезличенную статистику.</p>
+  <h2>Реклама в Android-приложении</h2>
+  <p>В приложении показывается реклама Рекламной сети Яндекса через Yandex Mobile Ads SDK (ООО «Яндекс», в составе SDK — компоненты AppMetrica): баннер внизу экрана, полноэкранная реклама между раундами и реклама за вознаграждение, которую вы включаете сами (открыть букву, дополнительная попытка). Для показа, подбора и измерения рекламы, а также для защиты от мошенничества SDK может обрабатывать:</p>
+  <ul>
+    <li>рекламный идентификатор устройства (Android Advertising ID, разрешение <code>AD_ID</code>);</li>
+    <li>сведения об устройстве и системе: модель, версия Android, язык, разрешение экрана;</li>
+    <li>сведения о сети: тип подключения, оператор, IP-адрес (по нему — приблизительный регион);</li>
+    <li>данные о показах рекламы и взаимодействии с ней.</li>
+  </ul>
+  <p>Эти данные получает и обрабатывает Яндекс, а не разработчик, — по <a href="https://yandex.ru/legal/confidential/" rel="noopener" target="_blank">Политике конфиденциальности Яндекса</a> и правилам Рекламной сети Яндекса (<a href="https://yandex.ru/legal/partner/ru/" rel="noopener" target="_blank">Правила участия</a>, <a href="https://yandex.ru/legal/yan_service_offer/ru/" rel="noopener" target="_blank">Оферта</a>). Вы можете сбросить или удалить рекламный идентификатор и отключить персонализацию рекламы в настройках Android (Настройки → Google → Реклама или Конфиденциальность → Реклама). Игра полностью работает и без интернета — тогда реклама не загружается.</p>
+  <h2>Веб-версия на pirogovlab.ru</h2>
+  <p>В веб-версии нет рекламы. Для обезличенной статистики посещаемости используется Яндекс Метрика (ООО «Яндекс»): она обрабатывает cookie, сведения о браузере и устройстве, IP-адрес и действия на странице по Политике конфиденциальности Яндекса. Вы можете заблокировать счётчик в настройках браузера или расширением — игра будет работать. Как и любой сайт, сервер pirogovlab.ru записывает в технические журналы стандартные сведения о запросах (IP-адрес, время, браузер) — для работы и защиты сайта; они не используются для идентификации игроков.</p>
+  <h2>Кнопка «Поделиться»</h2>
+  <p>Результат раунда (текст с цветными квадратиками, в веб-версии — со ссылкой на игру) передаётся только когда вы сами нажимаете «Поделиться» — через системное меню «Поделиться» Android или браузера либо копируется в буфер обмена. Куда её отправить, выбираете вы; разработчик эти данные не получает.</p>
+  <h2>Разрешения Android</h2>
+  <p>Интернет и состояние сети — для загрузки рекламы и общей таблицы лидеров; <code>AD_ID</code> — рекламный идентификатор для Yandex Mobile Ads; вибрация — отклик при игре (отключается в настройках игры). Приложение не запрашивает доступ к контактам, камере, микрофону, местоположению и файлам.</p>
+  <h2>Дети</h2>
+  <p>Содержание игры подходит для всех возрастов (0+), но игра не предназначена специально для детей и разработчик сознательно не собирает данные детей. Реклама подбирается и показывается Рекламной сетью Яндекса по её правилам. Родители могут отключить персонализацию рекламы в настройках Android или пользоваться игрой без интернета.</p>
+  <h2>Хранение и удаление данных</h2>
+  <p>Чтобы удалить прогресс, используйте «Сбросить прогресс» в настройках игры, удалите приложение или очистите данные сайта в браузере. Облачное сохранение Яндекс Игр и данные профиля управляются в вашем Яндекс ID. На стороне разработчика хранятся только данные общей таблицы лидеров (если вы указали ник) — их удаляет кнопка «Удалить меня из таблицы» или запрос через контакты. По вопросам рекламных данных можно обратиться в Яндекс.</p>
+  <h2>Изменения</h2>
+  <p>При изменении работы игры с данными эта страница будет обновлена; дата редакции указана вверху.</p>
+  <h2>Контакты</h2>
+  <p>PirogovLab, Михаил Пирогов. Вопросы о конфиденциальности — в Telegram <a href="https://t.me/mihailpirogov" rel="noopener" target="_blank">@mihailpirogov</a> или через страницу <a href="/contacts/">контактов</a>.</p>
+  <p><a href="/mari-wordle/privacy/en/" hreflang="en" lang="en">English version</a></p>
+  </section>
+</main>
+<footer>&copy; 2026 Pirogov Lab · <a href="/blog/">Блог</a> · <a href="/contacts/">Контакты</a></footer>
+</body>
+</html>

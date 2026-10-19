@@ -1,0 +1,28 @@
+# signing keys and passwords: NEVER commit
+release/keys/
+*.p12
+*.jks
+*.keystore
+keystore.properties
+local.properties
+# deploy scripts (server access) are kept locally only
+tools/deploy_*.sh
+# build outputs
+android/build/
+android/app/build/
+android/.gradle/
+android/app/src/main/assets/www/
+release/
+*.apk
+*.aab
+*.zip
+# dictionary-derived data (Марий йылме мутер / МарНИИЯЛИ, not openly licensed): rebuilt locally with tools/build_words.py and tools/build_lb_data.py
+data/words.js
+data/cards.js
+data/answers.tsv
+server/words.json
+server/bad_mhr.json
+# leaderboard runtime data lives on the server only (/var/www/.../mari-wordle-private)
+test/node_modules/
+__pycache__/
+shots/

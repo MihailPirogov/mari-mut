@@ -1,0 +1,48 @@
+plugins { id 'com.android.application' }
+
+// Release signing: SAME key as Мут тӱня, /workspace/mari-wow/release/keys/keystore.properties (NOT in git; back it up!)
+def ksFile = new File('/workspace/mari-wow/release/keys/keystore.properties')
+def ks = new Properties()
+if (ksFile.exists()) ksFile.withInputStream { ks.load(it) }
+
+android {
+    namespace 'ru.pirogovlab.mariwordle'
+    compileSdk 36
+    buildToolsVersion '36.0.0'
+    defaultConfig {
+        applicationId 'ru.pirogovlab.mariwordle'
+        minSdk 24
+        targetSdk 36
+        versionCode 1
+        versionName '1.0.0'
+    }
+    buildFeatures { buildConfig true }
+    signingConfigs {
+        release {
+            if (ks['storeFile']) {
+                storeFile new File('/workspace/mari-wow/release/keys/' + ks['storeFile'])
+                storePassword ks['storePassword']
+                keyAlias ks['keyAlias']
+                keyPassword ks['keyPassword']
+            }
+        }
+    }
+    buildTypes {
+        // ad unit IDs: res/values/ads.xml. ads_demo=true -> Yandex demo units (debug builds, or -PadsDemo=true)
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            resValue 'bool', 'ads_demo', (project.findProperty('adsDemo') ?: 'false').toString()
+        }
+        debug {
+            resValue 'bool', 'ads_demo', 'true'
+        }
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_11; targetCompatibility JavaVersion.VERSION_11 }
+    androidResources { noCompress += ['mp3', 'webp'] }
+}
+
+dependencies {
+    // Yandex Mobile Ads SDK (banner / interstitial / rewarded). Ad unit IDs: res/values/ads.xml
+    implementation 'com.yandex.android:mobileads:8.6.0'
+}
