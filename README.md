@@ -5,7 +5,8 @@
 - **Страница игры:** https://pirogovlab.ru/mari-mut-igra/ (EN: https://pirogovlab.ru/en/mari-mut-igra/)
 - **Играть в браузере:** https://pirogovlab.ru/mari-wordle/
 - **Политика конфиденциальности:** https://pirogovlab.ru/mari-wordle/privacy/
-- Android-пакет: `ru.pirogovlab.mariwordle` (скоро в Google Play, RuStore и Яндекс Играх)
+- **Google Play:** https://play.google.com/store/apps/details?id=ru.pirogovlab.mariwordle
+- Android-пакет: `ru.pirogovlab.mariwordle` (скоро также в RuStore и Яндекс Играх)
 
 ## Возможности
 - Задача дня — одно слово для всех, новое каждый день в полночь по Москве; практика без ограничений.
